@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../albert_zh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../allennlp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../bert" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RAdam-Tensorflow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tensorflow_v1_rectified_adam" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gcn_clustering" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../hedwig" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../minimal_allennlp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../models" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../nlpc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../service_streamer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../shannon_ner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../tensorflow-serving-example" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../text_classification" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../tpu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../zhaohang" vcs="Git" />
+  </component>
+</project>

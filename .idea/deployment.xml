@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="g3" createEmptyFolders="true" showAutoUploadSettingsWarning="false">
+    <serverData>
+      <paths name="g11">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="g3">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/study/coref" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/study/albert_zh" local="$PROJECT_DIR$/../albert_zh" web="/" />
+            <mapping deploy="/study/bert" local="$PROJECT_DIR$/../bert" web="/" />
+            <mapping deploy="/work/service_streamer" local="$PROJECT_DIR$/../service_streamer" web="/" />
+            <mapping deploy="/study/tensorflow-serving-example" local="$PROJECT_DIR$/../tensorflow-serving-example" web="/" />
+            <mapping deploy="/study/BERT-BiLSTM-CRF-NER" local="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER" web="/" />
+            <mapping deploy="/work/shannon_ner" local="$PROJECT_DIR$/../shannon_ner" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="g6">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/study/coref" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/study/bert" local="$PROJECT_DIR$/../bert" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tpu">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/wuwei" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/wuwei/bert" local="$PROJECT_DIR$/../bert" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

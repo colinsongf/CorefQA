@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c73ad403-7ecd-43d4-a3a3-c9e4094d0877" name="Default Changelist" comment="FEA reformat code &amp; add">
+      <change beforePath="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER/bert_base/train/lstm_crf_layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER/bert_base/train/lstm_crf_layer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER/bert_base/train/tf_metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER/bert_base/train/tf_metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../allennlp/allennlp/modules/conditional_random_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/../allennlp/allennlp/modules/conditional_random_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/current_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gap_to_jsonlines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/independent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minimize.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_training_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overlap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/overlap_minimize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm_coref.slrm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.experiments.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/to_gap_tsv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tune.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/coref_elmo_full" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shannon_ner/experiments/product.jsonnet" beforeDir="false" afterPath="$PROJECT_DIR$/../shannon_ner/experiments/product.jsonnet" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/coref$run_pretraining.coverage" NAME="run_pretraining Coverage Results" MODIFIED="1572501270434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bert" />
+    <SUITE FILE_PATH="coverage/coref$label_construction.coverage" NAME="label_construction Coverage Results" MODIFIED="1574740591712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bert" />
+    <SUITE FILE_PATH="coverage/coref$bert_model.coverage" NAME="bert_model Coverage Results" MODIFIED="1573522143308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../service_streamer/example" />
+    <SUITE FILE_PATH="coverage/coref$eval_ner.coverage" NAME="eval_ner Coverage Results" MODIFIED="1574919920335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bert" />
+    <SUITE FILE_PATH="coverage/coref$get_test_result.coverage" NAME="get_test_result Coverage Results" MODIFIED="1574256018105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bert" />
+    <SUITE FILE_PATH="coverage/coref$print_clusters.coverage" NAME="print_clusters Coverage Results" MODIFIED="1571127321689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/debug" />
+    <SUITE FILE_PATH="coverage/coref$train.coverage" NAME="train Coverage Results" MODIFIED="1571140307911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/coref$mnist_custom_estimator.coverage" NAME="mnist_custom_estimator Coverage Results" MODIFIED="1573637979160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../tensorflow-serving-example/python/train" />
+    <SUITE FILE_PATH="coverage/coref$minimize.coverage" NAME="minimize Coverage Results" MODIFIED="1571015808390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/coref$beautiful_jsonlines.coverage" NAME="beautiful_jsonlines Coverage Results" MODIFIED="1572617540633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/debug" />
+    <SUITE FILE_PATH="coverage/coref$multi_process_create.coverage" NAME="multi_process_create Coverage Results" MODIFIED="1573135882996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bert" />
+    <SUITE FILE_PATH="coverage/coref$collapse.coverage" NAME="collapse Coverage Results" MODIFIED="1572935399755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bert" />
+    <SUITE FILE_PATH="coverage/coref$create_pretraining_data.coverage" NAME="create_pretraining_data Coverage Results" MODIFIED="1573134070507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../bert" />
+    <SUITE FILE_PATH="coverage/coref$convert_dataset.coverage" NAME="convert_dataset Coverage Results" MODIFIED="1575333544230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/debug" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup_all.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="126" selection-start-line="6" selection-start-column="103" selection-end-line="6" selection-end-column="126" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prepare_training_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/evaluate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="675">
+                <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/corefqa.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1325">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#16#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1300">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conll.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>eval</find>
+      <find>boar</find>
+      <find>summ</find>
+      <find>map</find>
+      <find>hook</find>
+      <find>mnist</find>
+      <find>labels</find>
+      <find>model.</find>
+      <find>bert</find>
+      <find>adam</find>
+      <find>schedule</find>
+      <find>adam_</find>
+      <find>bertad</find>
+      <find>SCHEDULES</find>
+      <find>simple</find>
+      <find>tagger</find>
+      <find>tag</find>
+      <find>export</find>
+      <find>export_estimator_savedmodel</find>
+      <find>export(</find>
+      <find>serving_input_receiver_fn</find>
+      <find>model_fn</find>
+      <find>input_fn</find>
+      <find>output_dir</find>
+      <find>label_namespace</find>
+      <find>top_k</find>
+      <find>top_</find>
+      <find>38</find>
+      <find>examples</find>
+      <find>util</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>wrk</replace>
+      <replace>benchmark</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\wuwei\Documents\GitHub\gcn_clustering</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\nlpc</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\service_streamer</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\bert</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\hedwig</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\text_classification</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\coref</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\coref\bert</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\models</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\tpu</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\minimal_allennlp\allennlp</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\shannon_ner</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\minimal_allennlp</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\allennlp</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\allennlp\allennlp\models</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="update" />
+        <entry key="$PROJECT_DIR$/../service_streamer" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_COMMON_BRANCH" value="master" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../bert/modeling.py" />
+        <option value="$PROJECT_DIR$/../bert/optimization.py" />
+        <option value="$PROJECT_DIR$/../bert/predicting_movie_reviews_with_bert_on_tf_hub.ipynb" />
+        <option value="$PROJECT_DIR$/../bert/extract_features.py" />
+        <option value="$PROJECT_DIR$/../bert/modeling_test.py" />
+        <option value="$PROJECT_DIR$/../bert/run_classifier_with_tfhub.py" />
+        <option value="$PROJECT_DIR$/../bert/sample_text.txt" />
+        <option value="$PROJECT_DIR$/../bert/run_pretraining.py" />
+        <option value="$PROJECT_DIR$/../service_streamer/example/__init__.py" />
+        <option value="$PROJECT_DIR$/../service_streamer/README_zh.md" />
+        <option value="$PROJECT_DIR$/../service_streamer/README.md" />
+        <option value="$PROJECT_DIR$/../service_streamer/example/flask_multigpu_example.py" />
+        <option value="$PROJECT_DIR$/../service_streamer/example/bert_model.py" />
+        <option value="$PROJECT_DIR$/../service_streamer/service_streamer/service_streamer.py" />
+        <option value="$PROJECT_DIR$/../service_streamer/example/flask_example.py" />
+        <option value="$PROJECT_DIR$/../bert/run_text_infilling.sh" />
+        <option value="$PROJECT_DIR$/../bert/run_text_infilling.py" />
+        <option value="$PROJECT_DIR$/../tensorflow-serving-example/python/train/mnist_custom_estimator.py" />
+        <option value="$PROJECT_DIR$/../tensorflow-serving-example/README.md" />
+        <option value="$PROJECT_DIR$/../hedwig/common/evaluators/bert_evaluator.py" />
+        <option value="$PROJECT_DIR$/../bert/cat_desc.txt" />
+        <option value="$PROJECT_DIR$/../bert/requirements.txt" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/../bert/run_classifier.py" />
+        <option value="$PROJECT_DIR$/../bert/run_classifier.sh" />
+        <option value="$PROJECT_DIR$/../bert/get_test_result.py" />
+        <option value="$PROJECT_DIR$/../bert/tokenization.py" />
+        <option value="$PROJECT_DIR$/../bert/run_transformer.py" />
+        <option value="$PROJECT_DIR$/../bert/run_transformer.sh" />
+        <option value="$PROJECT_DIR$/../bert/label_construction.py" />
+        <option value="$PROJECT_DIR$/../bert/run_interaction.sh" />
+        <option value="$PROJECT_DIR$/../bert/run_interaction.py" />
+        <option value="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER/bert_base/train/tf_metrics.py" />
+        <option value="$PROJECT_DIR$/../bert/eval_ner.py" />
+        <option value="$PROJECT_DIR$/../bert/run_ner.sh" />
+        <option value="$PROJECT_DIR$/debug/convert_dataset.py" />
+        <option value="$PROJECT_DIR$/independent.py" />
+        <option value="$PROJECT_DIR$/../CorefQA/build_input_fn.py" />
+        <option value="$PROJECT_DIR$/../shannon_ner/experiments/ner.jsonnet" />
+        <option value="$PROJECT_DIR$/../minimal_allennlp/allennlp/training/optimizers.py" />
+        <option value="$PROJECT_DIR$/../shannon_ner/shannon_ner/models/simple_tagger.py" />
+        <option value="$PROJECT_DIR$/../bert/run_ner_gpu.sh" />
+        <option value="$PROJECT_DIR$/../bert/run_ner.py" />
+        <option value="$PROJECT_DIR$/../shannon_ner/shannon_ner/models/vanilla_tagger.py" />
+        <option value="$PROJECT_DIR$/../shannon_ner/shannon_ner/models/__init__.py" />
+        <option value="$PROJECT_DIR$/../shannon_ner/experiments/bert_fc_ner.jsonnet" />
+        <option value="$PROJECT_DIR$/../shannon_ner/experiments/bert_fc_crf_ner.jsonnet" />
+        <option value="$PROJECT_DIR$/../shannon_ner/shannon_ner/models/vanilla_crf_tagger.py" />
+        <option value="$PROJECT_DIR$/minimize.py" />
+        <option value="$PROJECT_DIR$/prepare_dataset.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1944" />
+    <option name="height" value="1044" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="coref" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coref" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shannon_ner" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wuwei\Documents\GitHub\shannon_ner\experiments" />
+      <recent name="C:\Users\wuwei\Documents\GitHub\bert" />
+      <recent name="C:\Users\wuwei\Documents\GitHub\bert\config" />
+      <recent name="C:\Users\wuwei\Documents\GitHub\coref" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wuwei\Documents\GitHub\coref" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.convert_dataset">
+    <configuration name="convert_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="coref" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/debug" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/debug/convert_dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="eval_ner" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="bert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../bert" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../bert/eval_ner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_test_result" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="bert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../bert" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../bert/get_test_result.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="label_construction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="bert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../bert" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../bert/label_construction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mnist_custom_estimator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tensorflow-serving-example" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../tensorflow-serving-example/python/train" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../tensorflow-serving-example/python/train/mnist_custom_estimator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.mnist_custom_estimator" />
+      <item itemvalue="Python.get_test_result" />
+      <item itemvalue="Python.label_construction" />
+      <item itemvalue="Python.eval_ner" />
+      <item itemvalue="Python.convert_dataset" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.convert_dataset" />
+        <item itemvalue="Python.eval_ner" />
+        <item itemvalue="Python.label_construction" />
+        <item itemvalue="Python.get_test_result" />
+        <item itemvalue="Python.mnist_custom_estimator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c73ad403-7ecd-43d4-a3a3-c9e4094d0877" name="Default Changelist" comment="" />
+      <created>1570497243740</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570497243740</updated>
+      <workItem from="1570497245564" duration="45049000" />
+      <workItem from="1570621224911" duration="1210000" />
+      <workItem from="1570626449059" duration="1831000" />
+      <workItem from="1570693227259" duration="4725000" />
+      <workItem from="1570962229074" duration="85804000" />
+      <workItem from="1571194004097" duration="3672000" />
+      <workItem from="1571241915898" duration="692000" />
+      <workItem from="1571277499071" duration="1412000" />
+      <workItem from="1571300473535" duration="3554000" />
+      <workItem from="1571314204795" duration="99000" />
+      <workItem from="1571316556644" duration="9000" />
+      <workItem from="1571362090894" duration="7685000" />
+      <workItem from="1571407321042" duration="10268000" />
+      <workItem from="1571571178482" duration="13599000" />
+      <workItem from="1571666949322" duration="9207000" />
+      <workItem from="1571748882633" duration="937000" />
+      <workItem from="1572171887712" duration="7572000" />
+      <workItem from="1572242520491" duration="2515000" />
+      <workItem from="1572263216054" duration="568000" />
+      <workItem from="1572330016847" duration="8758000" />
+      <workItem from="1572347420203" duration="6731000" />
+      <workItem from="1572410114340" duration="57571000" />
+      <workItem from="1572918361706" duration="10243000" />
+      <workItem from="1572960130252" duration="4254000" />
+      <workItem from="1573026204504" duration="55061000" />
+      <workItem from="1573474778958" duration="40434000" />
+      <workItem from="1573637413081" duration="61679000" />
+      <workItem from="1573818872216" duration="219000" />
+      <workItem from="1573819365801" duration="18662000" />
+      <workItem from="1573888913078" duration="14398000" />
+      <workItem from="1574063979875" duration="10997000" />
+      <workItem from="1574134553724" duration="32693000" />
+      <workItem from="1574242811840" duration="6456000" />
+      <workItem from="1574346319598" duration="17232000" />
+      <workItem from="1574495384605" duration="6386000" />
+      <workItem from="1574606943252" duration="594000" />
+      <workItem from="1574641334046" duration="39680000" />
+      <workItem from="1574734947275" duration="27076000" />
+      <workItem from="1574817217505" duration="13902000" />
+      <workItem from="1574904886088" duration="8111000" />
+      <workItem from="1574920110326" duration="3062000" />
+      <workItem from="1574992077523" duration="14338000" />
+      <workItem from="1575035175905" duration="1820000" />
+      <workItem from="1575077965207" duration="1678000" />
+      <workItem from="1575094420361" duration="593000" />
+      <workItem from="1575104062503" duration="540000" />
+      <workItem from="1575289935759" duration="6502000" />
+      <workItem from="1575333882802" duration="24000" />
+      <workItem from="1575792947114" duration="17592000" />
+      <workItem from="1575878987157" duration="14308000" />
+      <workItem from="1575940133387" duration="15320000" />
+      <workItem from="1576026903241" duration="7473000" />
+      <workItem from="1576506221841" duration="7389000" />
+      <workItem from="1576601672846" duration="1249000" />
+      <workItem from="1576721334127" duration="7892000" />
+    </task>
+    <task id="LOCAL-00001" summary="reformat code">
+      <created>1571120307302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571120307302</updated>
+    </task>
+    <task id="LOCAL-00002" summary="FEA 检查数据集">
+      <created>1571416094626</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571416094626</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add config">
+      <created>1571416938530</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571416938530</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix config">
+      <created>1571450312151</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571450312151</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix warning for linear_sum_assignment">
+      <created>1571450942023</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571450942023</updated>
+    </task>
+    <task id="LOCAL-00006" summary="FEA test training">
+      <created>1572404179561</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572404179562</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FEA reformat code">
+      <created>1572432326114</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572432326114</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FEA add config">
+      <created>1572433656283</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572433656283</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix tpu_name">
+      <created>1572434877507</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572434877507</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FEA actual running">
+      <created>1572434996472</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572434996473</updated>
+    </task>
+    <task id="LOCAL-00011" summary="FEA using ListDirectory">
+      <created>1573183919941</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1573183919941</updated>
+    </task>
+    <task id="LOCAL-00012" summary="FEA nlpc for tokenization &amp;&amp; no gfile.Glob">
+      <created>1573212958221</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573212958222</updated>
+    </task>
+    <task id="LOCAL-00013" summary="FEA reformat code">
+      <created>1573530295585</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573530295585</updated>
+    </task>
+    <task id="LOCAL-00014" summary="FEA change multi-processing start method">
+      <created>1573530697576</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573530697576</updated>
+    </task>
+    <task id="LOCAL-00015" summary="FEA reformat code &amp; add text infilling">
+      <created>1573549500864</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573549500864</updated>
+    </task>
+    <task id="LOCAL-00016" summary="FEA reformat code">
+      <created>1573556436131</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573556436131</updated>
+    </task>
+    <task id="LOCAL-00017" summary="FEA add label description experiments">
+      <created>1573808156959</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573808156959</updated>
+    </task>
+    <task id="LOCAL-00018" summary="FEA reuse reuters-desc">
+      <created>1573823653879</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573823653881</updated>
+    </task>
+    <task id="LOCAL-00019" summary="FEA add multi-label classification">
+      <created>1574080437052</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1574080437053</updated>
+    </task>
+    <task id="LOCAL-00020" summary="FEA reformat code">
+      <created>1574155415469</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1574155415470</updated>
+    </task>
+    <task id="LOCAL-00021" summary="FEA add interactive &amp; ner">
+      <created>1574749757939</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1574749757940</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ADD crf for ner">
+      <created>1574819254489</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1574819254489</updated>
+    </task>
+    <task id="LOCAL-00023" summary="FEA map_boolean_mask">
+      <created>1574840246473</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1574840246475</updated>
+    </task>
+    <task id="LOCAL-00024" summary="FEA add evaluation">
+      <created>1574921360381</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1574921360381</updated>
+    </task>
+    <task id="LOCAL-00025" summary="FEA setup tpu running">
+      <created>1574995536468</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1574995536468</updated>
+    </task>
+    <task id="LOCAL-00026" summary="FEA export to saved model">
+      <created>1575964224233</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1575964224233</updated>
+    </task>
+    <task id="LOCAL-00027" summary="ADD CorefQA">
+      <created>1576506347785</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1576506347785</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="741325000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09098133" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49940404" weight="0.6975838" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49980134" weight="0.4724689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3858145" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969603" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5427096" weight="0.8628215" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.5806703" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4572904" side_tool="true" weight="0.8628215" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5005959" side_tool="true" weight="0.32969603" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.37590945" weight="0.3285968" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Google Cloud Storage" order="6" show_stripe_button="false" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14713015" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49940404" weight="0.6975838" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49980134" weight="0.47388932" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3858145" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969603" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32969603" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.4955595" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5008881" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5005959" side_tool="true" weight="0.32969603" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Google Cloud Storage" order="6" show_stripe_button="false" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="reformat code" />
+    <MESSAGE value="FEA 检查数据集" />
+    <MESSAGE value="add config" />
+    <MESSAGE value="fix config" />
+    <MESSAGE value="fix warning for linear_sum_assignment" />
+    <MESSAGE value="FEA test training" />
+    <MESSAGE value="FEA add config" />
+    <MESSAGE value="fix tpu_name" />
+    <MESSAGE value="FEA actual running" />
+    <MESSAGE value="FEA using ListDirectory" />
+    <MESSAGE value="FEA nlpc for tokenization &amp;&amp; no gfile.Glob" />
+    <MESSAGE value="FEA change multi-processing start method" />
+    <MESSAGE value="FEA reformat code &amp; add text infilling" />
+    <MESSAGE value="FEA add label description experiments" />
+    <MESSAGE value="FEA reuse reuters-desc" />
+    <MESSAGE value="FEA add multi-label classification" />
+    <MESSAGE value="FEA reformat code" />
+    <MESSAGE value="FEA add interactive &amp; ner" />
+    <MESSAGE value="ADD crf for ner" />
+    <MESSAGE value="FEA map_boolean_mask" />
+    <MESSAGE value="FEA add evaluation" />
+    <MESSAGE value="FEA setup tpu running" />
+    <MESSAGE value="FEA export to saved model" />
+    <MESSAGE value="ADD CorefQA" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD CorefQA" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>any(i &gt; 20 for i in cluster_lens)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../minimal_allennlp/allennlp/data/token_indexers/wordpiece_indexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7271">
+          <caret line="24" column="71" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../minimal_allennlp/allennlp/training/scheduler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../minimal_allennlp/allennlp/training/learning_rate_schedulers/learning_rate_scheduler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/training_config/coref.jsonnet">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/training_config/bert_base_srl.jsonnet">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/2014071214/-601507261/pytorch_pretrained_bert/optimization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="182" column="6" selection-start-line="182" selection-start-column="6" selection-end-line="182" selection-end-column="6" />
+          <folding>
+            <element signature="e#689#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../minimal_allennlp/allennlp/training/optimizers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="548" lean-forward="true" selection-start-line="548" selection-end-line="548" />
+          <folding>
+            <element signature="e#846#860#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/training/optimizers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/training_config/dialog_qa.jsonnet">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2600">
+          <caret line="104" column="40" lean-forward="true" selection-start-line="104" selection-start-column="40" selection-end-line="104" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/event2mind.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/srl_bert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3225">
+          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/next_token_lm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/srl_util.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shannon_ner/shannon_ner/dataset_readers/conll_dataset_reader.py" />
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/crf_tagger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1805372911/1013863549/tensorflow/python/estimator/export/export.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6550">
+          <caret line="282" column="43" selection-start-line="282" selection-start-column="4" selection-end-line="282" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1805372911/1013863549/tensorflow/contrib/tpu/python/tpu/tpu_estimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83550">
+          <caret line="3402" column="26" selection-start-line="3402" selection-start-column="26" selection-end-line="3402" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1805372911/1013863549/tensorflow/python/estimator/estimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14550">
+          <caret line="632" column="54" selection-start-line="632" selection-start-column="29" selection-end-line="632" selection-end-column="54" />
+          <folding>
+            <element signature="e#719#757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/2120032462/-786161626/typing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="1449" column="4" selection-start-line="1449" selection-start-column="4" selection-end-line="1449" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1805372911/-971727757/torch/nn/modules/dropout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1805372911/-971727757/allennlp/nn/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret line="480" column="4" selection-start-line="480" selection-start-column="4" selection-end-line="480" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1805372911/-971727757/allennlp/training/metrics/span_based_f1_measure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shannon_ner/experiments/ner.jsonnet" />
+    <entry file="file://$PROJECT_DIR$/../bert/run_ner_gpu.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shannon_ner/shannon_ner/models/vanilla_tagger.py" />
+    <entry file="file://$PROJECT_DIR$/../shannon_ner/shannon_ner/models/vanilla_crf_tagger.py" />
+    <entry file="file://$PROJECT_DIR$/../shannon_ner/experiments/bert_fc_ner.jsonnet" />
+    <entry file="file://$PROJECT_DIR$/../shannon_ner/experiments/bert_fc_crf_ner.jsonnet" />
+    <entry file="file://$PROJECT_DIR$/../zhaohang/common/base/announcement_types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1805372911/-971727757/allennlp/modules/conditional_random_field.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4125">
+          <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1805372911/-971727757/allennlp/models/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bert/run_ner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7839">
+          <caret line="384" column="40" selection-start-line="384" selection-start-column="40" selection-end-line="384" selection-end-column="40" />
+          <folding>
+            <element signature="e#657#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1805372911/-971727757/allennlp/nn/initializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="265" column="8" selection-start-line="265" selection-start-column="8" selection-end-line="265" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shannon_ner/shannon_ner/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup_training.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optimization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conll.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3125">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="675">
+            <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corefqa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1325">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#16#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/independent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6200">
+          <caret line="408" column="25" selection-start-line="408" selection-start-column="25" selection-end-line="408" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup_all.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="126" selection-start-line="6" selection-start-column="103" selection-end-line="6" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/current_models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prepare_training_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gap_to_jsonlines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tune.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

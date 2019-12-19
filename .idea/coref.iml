@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="bert" />
+    <orderEntry type="module" module-name="tpu" />
+    <orderEntry type="module" module-name="models" />
+    <orderEntry type="module" module-name="albert_zh" />
+    <orderEntry type="module" module-name="gcn_clustering" />
+    <orderEntry type="module" module-name="service_streamer" />
+    <orderEntry type="module" module-name="tensorflow-serving-example" />
+    <orderEntry type="module" module-name="hedwig" />
+    <orderEntry type="module" module-name="text_classification" />
+    <orderEntry type="module" module-name="BERT-BiLSTM-CRF-NER" />
+    <orderEntry type="module" module-name="CorefQA" />
+    <orderEntry type="module" module-name="shannon_ner" />
+    <orderEntry type="module" module-name="minimal_allennlp" />
+    <orderEntry type="module" module-name="allennlp" />
+    <orderEntry type="module" module-name="zhaohang" />
+  </component>
+</module>

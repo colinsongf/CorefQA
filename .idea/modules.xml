@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER/.idea/BERT-BiLSTM-CRF-NER.iml" filepath="$PROJECT_DIR$/../BERT-BiLSTM-CRF-NER/.idea/BERT-BiLSTM-CRF-NER.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CorefQA/.idea/CorefQA.iml" filepath="$PROJECT_DIR$/../CorefQA/.idea/CorefQA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../albert_zh/.idea/albert_zh.iml" filepath="$PROJECT_DIR$/../albert_zh/.idea/albert_zh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../allennlp/.idea/allennlp.iml" filepath="$PROJECT_DIR$/../allennlp/.idea/allennlp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bert/.idea/bert.iml" filepath="$PROJECT_DIR$/../bert/.idea/bert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/coref.iml" filepath="$PROJECT_DIR$/.idea/coref.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gcn_clustering/.idea/gcn_clustering.iml" filepath="$PROJECT_DIR$/../gcn_clustering/.idea/gcn_clustering.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hedwig/.idea/hedwig.iml" filepath="$PROJECT_DIR$/../hedwig/.idea/hedwig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../minimal_allennlp/.idea/minimal_allennlp.iml" filepath="$PROJECT_DIR$/../minimal_allennlp/.idea/minimal_allennlp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../models/.idea/models.iml" filepath="$PROJECT_DIR$/../models/.idea/models.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../service_streamer/.idea/service_streamer.iml" filepath="$PROJECT_DIR$/../service_streamer/.idea/service_streamer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shannon_ner/.idea/shannon_ner.iml" filepath="$PROJECT_DIR$/../shannon_ner/.idea/shannon_ner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tensorflow-serving-example/.idea/tensorflow-serving-example.iml" filepath="$PROJECT_DIR$/../tensorflow-serving-example/.idea/tensorflow-serving-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../text_classification/.idea/text_classification.iml" filepath="$PROJECT_DIR$/../text_classification/.idea/text_classification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tpu/.idea/tpu.iml" filepath="$PROJECT_DIR$/../tpu/.idea/tpu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zhaohang/.idea/zhaohang.iml" filepath="$PROJECT_DIR$/../zhaohang/.idea/zhaohang.iml" />
+    </modules>
+  </component>
+</project>
