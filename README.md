@@ -18,6 +18,7 @@
 
 ## 模型评估
 运行 `GPU=0 python evaluate.py <experiment>`评估模型，可以通过在`experiments.conf`设置`eval_path`和`conll_eval_path`来选择在开发集还是在测试集上做评估。模型的评估效果如下：
+
 | Model          | F1 (%) |
 | -------------- |:------:|
 | CorefQA + SpanBERT-base  | 79.9  |
